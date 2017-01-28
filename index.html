@@ -8,12 +8,12 @@
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
-<body>
+<body ng-app="kachurivka" ng-strict-di>
    <header>
    	   <nav id="header-nav" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                <a href="index.html" class="pull-left visible-md visible-lg">
+                <a ui-sref="home" class="pull-left visible-md visible-lg">
                 	<div id="logo-img" alt="Logo Image"></div>
                 </a>
                 </div>
@@ -29,23 +29,23 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li class="visible-xs active">
-              <a href="index.html">
+              <a ui-sref="home">
                 <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Головна</a>
             </li>
             <li>
-              <a href="roster.html">
+              <a ui-sref="roster">
                 <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Склад </a>
             </li>
             <li>
-              <a href="calendar.html">
+              <a ui-sref="calendar">
                 <span class="glyphicon glyphicon-calendar"></span><br class="hidden-xs"> Календар </a>
             </li>
             <li>
-              <a href="tables.html">
+              <a ui-sref="tables">
                 <span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs"> Таблиці </a>
             </li>
             <li>
-              <a href="#">
+              <a ui-sref="forum">
                 <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Форум </a>
             </li>
           	</ul>
@@ -53,17 +53,32 @@
    		</div>
    	</nav>
    </header>
-   <div id="main-content" class="container">
-    </div>
+   <ui-view>
+     <div class="initial loading text-center" >
+       <h3>Content is loading...</h3>
+     </div>
+   </ui-view>
    <footer>
      <div id="footer" class="container">
        <p id="copyright" class="text-center"> FC Kachurivka 2005-2016 &copy;</p>
        <p class="text-center">Produced by wed-design studio Panchuk Webdevelopment &copy; </p>
      </div>
    </footer>
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/ajax-utils.js"></script>
-  <script src="js/script.js"></script>
+  <!-- Libraries -->
+  
+  <script src="lib/jquery-2.1.4.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+
+  <!-- Main restaurant module -->
+  <script src="src/kachurivka.module.js"></script>
+
+  <!-- Public module -->
+  <script src="src/public/public.module.js"></script>
+  <script src="src/public/public.router.js"></script>
+  <!-- Admin module -->
+
+  
 </body>
 </html>
