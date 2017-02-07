@@ -152,6 +152,8 @@ table tr:nth-child(15) {
 	color: #F6B319;
 }
 
+
+
 /* Large size screen */
 @media (min-width: 1200px) {
    #nav-list a {
@@ -195,6 +197,8 @@ table tr td:nth-child(2) {
 	width: 200px;
 }
 }
+
+
 /* Medium size screen */
 @media (min-width: 992px) and (max-width: 1199px) {
 	#logo-img { 
@@ -231,6 +235,11 @@ table tr td:nth-child(2) {
 #description2 {
 	height: 54px;
 }
+/* Roster */
+.category-tile span {
+	right: 5px;
+}
+
 	  /* Calendar */
      #calendar-name {
   	font-size: 1.3em;
@@ -256,6 +265,11 @@ table tr td:nth-child(2) {
 	.navbar-brand a h1 {
 		font-size: 2em;
 	}
+	/* Roster */
+	.category-tile span {
+	right: 10px;
+}
+
      /* Calendar */
      #calendar-name {
   	font-size: 1.2em;
