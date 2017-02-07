@@ -5,10 +5,15 @@
 	<title>FC Kachurivka</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/common.css">
+<link href="css/public.css">
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body ng-app="kachurivka" ng-strict-di>
+<loading></loading>
    <header>
    	   <nav id="header-nav" class="navbar navbar-default">
             <div class="container">
@@ -28,23 +33,23 @@
           </button>
           <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="visible-xs active">
+            <li class="visible-xs" ui-sref-active="active">
               <a ui-sref="home">
                 <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Головна</a>
             </li>
-            <li>
+            <li ui-sref-active="active">
               <a ui-sref="roster">
                 <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Склад </a>
             </li>
-            <li>
+            <li ui-sref-active="active">
               <a ui-sref="calendar">
                 <span class="glyphicon glyphicon-calendar"></span><br class="hidden-xs"> Календар </a>
             </li>
-            <li>
+            <li ui-sref-active="active">
               <a ui-sref="tables">
                 <span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs"> Таблиці </a>
             </li>
-            <li>
+            <li ui-sref-active="active">
               <a ui-sref="forum">
                 <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Форум </a>
             </li>
@@ -74,9 +79,16 @@
   <!-- Main restaurant module -->
   <script src="src/kachurivka.module.js"></script>
 
+  <!-- Common files -->
+  <script src="src/common/common.module.js"></script>
+  <script src="src/common/loading/loading.component.js"></script>
+  <script src="src/common/loading/loading.interceptor.js"></script>
+
   <!-- Public module -->
   <script src="src/public/public.module.js"></script>
   <script src="src/public/public.router.js"></script>
+   <script src="src/public/roster/roster.controller.js"></script>
+  <script src="src/public/roster/roster.component.js"></script>
   <!-- Admin module -->
 
   

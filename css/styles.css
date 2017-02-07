@@ -91,6 +91,19 @@ body {
 #description2 {
 	height: 149px;
 }
+.category-tile {
+	position: relative;
+	margin-bottom: 25px;
+}
+.category-tile span {
+	position: absolute;
+	width: 200px;
+	bottom: 0;
+	background-color: #f6b319;
+	right: 55px;
+	color: black;
+}
+
 /* Footer */
 footer {
 	background: #F6B319;

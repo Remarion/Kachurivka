@@ -15,7 +15,9 @@
 		})
 		.state('roster', {
 			url: '/roster/',
-			templateUrl: 'src/public/templates/roster.html'
+			templateUrl: 'src/public/roster/roster.html',
+			controller: 'RosterController',
+			controllerAs: 'rosterCtrl'
 		})
 		.state('calendar', {
 			url:'/calendar/',
