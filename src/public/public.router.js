@@ -31,5 +31,13 @@
 			url:'/forum/',
 			templateUrl:'src/public/templates/forum.html'
 		})
+		.state('login', {
+			url:'/login/',
+			templateUrl: 'src/common/login/login.html'
+		})
+		.state('register', {
+			url: '/register',
+			templateUrl:'src/common/register/register.html'
+		});
 	}
 })();

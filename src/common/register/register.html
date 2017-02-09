@@ -1,0 +1,103 @@
+<div class="container" novalidate>
+<h2 class="text-center">Реєстрація нового користувача</h2>
+    <fieldset>
+    <form name="regForm" novalidate>
+	
+<!-- First name validation -->
+
+    <div class="row inputrow">
+     <div class="col-sm-6 reginput">
+       <div class="input-group">
+       <span class="input-group-addon">Логін:</span>
+       <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="userName"
+       placeholder="Username" 
+	   required 
+	   minlength="2" 
+	   ng-model="reg.user.userName">
+       </div>
+       <div class="regerror" ng-if="(regForm.userName.$error.required || regForm.userName.$error.minlength) && regForm.userName.$touched">
+       <span class="glyphicon glyphicon-remove"></span> Введіть спочатку свій Username!</div>
+     </div>
+<!-- E-mail address validation -->
+      <div class="col-sm-6 reginput">
+        <div class="input-group">
+          <span class="input-group-addon">  Ваша електронна адреса:</span>
+	      <input type="email" name="email" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+	      placeholder="Email" 
+	      required 
+	      ng-model="reg.user.email">
+	    </div>
+	   <div class="regerror" ng-if="regForm.email.$invalid && regForm.email.$touched">
+	    <span class="glyphicon glyphicon-remove"></span> Введіть будь-ласка справжню адресу електронної пошти, наприклад: email@email.com</div>
+	  </div>
+	  </div>
+<!-- Password -->
+      <div class="row">
+       <div class="col-sm-6 reginput">
+        <div class="input-group">
+          <span class="input-group-addon">Пароль:</span>
+	      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="password"  
+	      placeholder="Password" 
+	      required 
+	      minlength="8" 
+	      ng-model="reg.user.password">
+	    </div>
+	    <div class="regerror" ng-if="(regForm.password.$error.required || regForm.password.$error.minlength) && regForm.password.$touched">
+	     <span class="glyphicon glyphicon-remove"></span> Пароль повинен мати більше 8 символів</div>
+       </div>
+<!-- Password again -->
+       <div class="col-sm-6 reginput">
+        <div class="input-group">
+         <span class="input-group-addon">Підтвердження паролю:</span>
+	     <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="passwordAgain"
+	     placeholder="Password confirmation" 
+	     required 
+	     inlength="8" 
+	     ng-model="reg.user.passwordAgain">
+	    </div>
+	    <div class="regerror" ng-if="(regForm.passwordAgain.$error.required || regForm.passwordAgain.$error.minlength) && regForm.passwordAgain.$touched">
+	     <span class="glyphicon glyphicon-remove"></span> Пароль повинен мати більше 8 символів</div>
+        <div class="regerror" ng-if="reg.user.password !== reg.user.passwordAgain && regForm.passwordAgain.$touched">
+         <span class="glyphicon glyphicon-remove"></span> Паролі не співпадають</div>
+       </div>
+      </div>
+<!-- Name -->
+      <div class="row">
+        <div class="col-sm-6 reginput">
+        	<div class="input-group">
+        		<span class="input-group-addon">Ім'я:</span>
+        		<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="firstName"
+                placeholder="First Name" 
+	            required 
+	            minlength="2" 
+	            ng-model="reg.user.firstName">
+            </div>
+            <div class="regerror" ng-if="(regForm.firstName.$error.required || regForm.firstName.$error.minlength) && regForm.firstName.$touched">
+             <span class="glyphicon glyphicon-remove"></span> Введіть, будь-ласка, ваше ім'я!</div>
+        </div>
+    	<div class="col-sm-6 reginput">
+        	<div class="input-group">
+        		<span class="input-group-addon">Прізвище:</span>
+        		<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="lastName"
+                placeholder="Last Name" 
+	            required 
+	            minlength="2" 
+	            ng-model="reg.user.lastName">
+            </div>
+            <div class="regerror" ng-if="(regForm.lastName.$error.required || regForm.lastName.$error.minlength) && regForm.lastName.$touched">
+             <span class="glyphicon glyphicon-remove"></span>Введіть, будь-ласка, ваше прізвище!</div>
+        </div>
+      </div>
+
+<!-- Go button ;) -->
+
+    <button 
+        class="regbutton center-block btn btn-info btn-block" 
+        ng-disabled="regForm.$invalid" 
+        ng-click="reg.getUserData()">
+    	Register
+    </button>
+
+	</form>
+	</fieldset>
+</div>

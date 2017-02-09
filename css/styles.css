@@ -2,6 +2,10 @@ body {
 	font-size: 16px;
 	color: #fff;
 	background: #000000;
+
+}
+h2 {
+	margin-bottom: 20px;
 }
 #header-nav {
 	background-color: #f6b319;
@@ -152,8 +156,31 @@ table tr:nth-child(15) {
 	color: #F6B319;
 }
 
-
-
+/* Register */
+.form-group span {
+	float: left;
+}
+.reginput {
+	color: #000000;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.regerror {
+	color: red;
+}
+.regbutton {
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	background: #F6B319;
+}
+/*Loginput */
+.loginInput {
+	margin-bottom: 8px;
+}
+#loginButton {
+  margin-bottom: 10px; 
+}
 /* Large size screen */
 @media (min-width: 1200px) {
    #nav-list a {

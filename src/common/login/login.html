@@ -1,0 +1,31 @@
+<div class="container">
+	<h3 class="text-center"> Вхід:</h3>
+	  <div class="row">
+	  	<div class="col-8-sm loginInput">
+	  	   <div class="input-group">
+             <span class="input-group-addon">Логін:</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="userName"
+                placeholder="Username" 
+	            required 
+	            minlength="2" 
+	            ng-model="login.user.userName">
+               </div>
+	  	   </div>	
+	  	</div>
+	  	<div class="row">
+	  	<div class="col-8-sm loginInput">
+	  	   <div class="input-group">
+             <span class="input-group-addon">Пароль:</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="password"
+                placeholder="Password" 
+	            required 
+	            minlength="2" 
+	            ng-model="login.user.password">
+               </div>
+	  	   </div>	
+	  	</div>
+        <div>
+	  	<button class="btn btn-success center-block" id="loginButton">Login</button>
+        </div>
+	<p class="text-center">Якщо у вас ще немає акаунту, <a ui-sref="register">зареєструватися можна тут</a></p>
+</div>
