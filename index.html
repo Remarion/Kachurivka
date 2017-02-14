@@ -18,12 +18,12 @@
    	   <nav id="header-nav" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                <a ui-sref="home" class="pull-left visible-md visible-lg">
+                <a ui-sref="public.home" class="pull-left visible-md visible-lg">
                 	<div id="logo-img" alt="Logo Image"></div>
                 </a>
                 </div>
                 <div class="navbar-brand">
-                	 <a href="index.html"><h1>FC Kachurivka</h1></a>
+                	 <a ui-sref="public.home"><h1>FC Kachurivka</h1></a>
                 </div>
             <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -34,27 +34,27 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li class="visible-xs" ui-sref-active="active">
-              <a ui-sref="home">
+              <a ui-sref="public.home">
                 <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Головна</a>
             </li>
             <li ui-sref-active="active">
-              <a ui-sref="roster">
+              <a ui-sref="public.roster">
                 <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Склад </a>
             </li>
             <li ui-sref-active="active">
-              <a ui-sref="calendar">
+              <a ui-sref="public.calendar">
                 <span class="glyphicon glyphicon-calendar"></span><br class="hidden-xs"> Календар </a>
             </li>
             <li ui-sref-active="active">
-              <a ui-sref="tables">
+              <a ui-sref="public.tables">
                 <span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs"> Таблиці </a>
             </li>
             <li ui-sref-active="active">
-              <a ui-sref="forum">
+              <a ui-sref="public.forum">
                 <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Форум </a>
             </li>
             <li ui-sref-active="active">
-              <a ui-sref="login">
+              <a ui-sref="public.login">
                 <span class="glyphicon glyphicon-off"></span><br class="hidden-xs"> Вхід </a>
             </li>
           	</ul>
@@ -87,12 +87,16 @@
   <script src="src/common/common.module.js"></script>
   <script src="src/common/loading/loading.component.js"></script>
   <script src="src/common/loading/loading.interceptor.js"></script>
+  <script src="src/common/kachurivka.service.js"></script>
 
   <!-- Public module -->
   <script src="src/public/public.module.js"></script>
   <script src="src/public/public.router.js"></script>
-   <script src="src/public/roster/roster.controller.js"></script>
+  <script src="src/public/roster/roster.controller.js"></script>
   <script src="src/public/roster/roster.component.js"></script>
+  <script src="src/public/roster/defenders/defenders.component.js"></script>
+  <script src="src/public/roster/midfielders/midfielders.component.js"></script>
+  <script src="src/public/roster/strikers/strikers.component.js"></script>
   <!-- Admin module -->
 
   

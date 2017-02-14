@@ -1,8 +1,8 @@
 (function(){
-	'use strict';
+	"use strict";
 
-	angular.module('common')
-	.component('goalkeeperPlayer', {
+	angular.module('public')
+	.component('defenderPlayer', {
 		templateUrl: 'src/public/roster/player.template.html',
 		bindings: {
 			player: '<'

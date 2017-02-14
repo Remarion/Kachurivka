@@ -212,6 +212,10 @@ table tr:nth-child(15) {
 	background: url('../images/anounce3.jpg') no-repeat;
 	height: 247px;
 }
+/* Roster */
+.category-tile span {
+	right: 62px;
+}
   /* Calendar */
   #calendar-name {
   	font-size: 1.6em;
@@ -224,8 +228,6 @@ table tr td:nth-child(2) {
 	width: 200px;
 }
 }
-
-
 /* Medium size screen */
 @media (min-width: 992px) and (max-width: 1199px) {
 	#logo-img { 
@@ -264,7 +266,7 @@ table tr td:nth-child(2) {
 }
 /* Roster */
 .category-tile span {
-	right: 5px;
+	right: 13px;
 }
 
 	  /* Calendar */
@@ -293,9 +295,10 @@ table tr td:nth-child(2) {
 		font-size: 2em;
 	}
 	/* Roster */
-	.category-tile span {
-	right: 10px;
-}
+/* Roster */
+    .category-tile span {
+	right: 20px;
+    }
 
      /* Calendar */
      #calendar-name {
@@ -343,6 +346,10 @@ table tr td:nth-child(2) {
 	.description p {
 		font-size: 0.8em;
 	}
+/* Roster */
+    .category-tile span {
+	right: 40px;
+    }
 /* Calendar */
     .calendar div p {
     	font-size: 0.7em;

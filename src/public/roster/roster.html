@@ -1,33 +1,31 @@
     <div id="main-content" class="container" >
     <h2 class="text-center">Склад команди ФК "Качурівка"</h3>
+    <div class="row">
     <h3>Воротарі:</h5>
     <hr>
-    <roster-player> </roster-player>
-     <roster-player> </roster-player>
-      <roster-player> </roster-player>
-       <roster-player> </roster-player>
-
-
+    <goalkeeper-player ng-repeat="teamGoalkeeper in rosterCtrl.teamGoalkeepers"
+                   player="teamGoalkeeper">
+    </goalkeeper-player>
+    </div>
+    <div class="row">
     <h3> Захисники:</h3>
     <hr>
-    <roster-player> </roster-player>
-     <roster-player> </roster-player>
-      <roster-player> </roster-player>
-       <roster-player> </roster-player>
-
-
+    <defender-player ng-repeat="teamDefender in rosterCtrl.teamDefenders"
+                    player="teamDefender">
+    </defender-player>
+    </div>
+    <div class="row">
     <h3> Півзахисники:</h3>
     <hr>
-    <roster-player> </roster-player>
-     <roster-player> </roster-player>
-      <roster-player> </roster-player>
-       <roster-player> </roster-player>
-
-
+    <midfielder-player ng-repeat="teamMidfielder in rosterCtrl.teamMidfielders"
+                    player="teamMidfielder">
+    </midfielder-player>
+    </div>
+    <div class="row">
     <h3> Нападаючі:</h3>
     <hr>
-    <roster-player> </roster-player>
-     <roster-player> </roster-player>
-      <roster-player> </roster-player>
-       <roster-player> </roster-player>
+    <striker-player ng-repeat="teamStriker in rosterCtrl.teamStrikers"
+                    player="teamStriker"> 
+    </striker-player>
+    </div>
     </div>
