@@ -1,0 +1,11 @@
+[{"id": 1, "name": "Петро", "lastname": "Березюк", "number": "8"},
+ {"id": 2, "name": "Славік", "lastname": "Птасюк", "number": "9"},
+ {"id": 3, "name": "Віталій", "lastname": "Твердохліб", "number": "10"},
+ {"id": 4, "name": "Володя", "lastname": "Бойко", "number": "11"},
+ {"id": 5, "name": "Олег", "lastname": "Антонюк", "number": "12"},
+ {"id": 6, "name": "Віталій", "lastname": "Парубочий", "number": "13"},
+ {"id": 7, "name": "Петро", "lastname": "Миронець", "number": "14"},
+ {"id": 8, "name": "Юра", "lastname": "Зварич", "number": "15"},
+ {"id": 9, "name": "Тарас", "lastname": "Зварич", "number": "16"},
+ {"id": 10, "name": "Міша", "lastname": "Грицишин", "number": "17"}
+]

@@ -1,0 +1,382 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background: #000000;
+
+}
+h2 {
+	margin-bottom: 20px;
+}
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+}
+#logo-img {
+	background: url('../images/kachurivka-large.png') no-repeat;
+	width: 150px;
+	height: 167px;
+	margin: 10px 15px 10px 0;
+}
+.navbar-brand a:focus, .navbar-brand a:hover {
+	text-decoration: none;
+}
+.navbar-brand a h1 {
+	color: #000000;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 2.5em;
+	text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+    margin-bottom: 0;
+    line-height: .75;
+
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #000000;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+#nav-list a span {
+	font-size: 1.8em;
+	margin: 5px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #61122f;
+}
+.navbar-header button .navbar-toggle {
+	clear: both;
+	margin-top: 30px;
+}
+#collapsable-nav {
+	border: 0;
+}
+.navbar-toggle {
+	margin-top: 23px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #000;
+}
+.container .jumbotron {
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+.description {
+	margin-top: 0;
+	background: #fff;
+	border-radius: 5px;
+	font-family: 'Comfortaa', cursive;
+}
+.description h3 {
+	color: #000;
+	margin-top: 0;
+	padding-top: 20px;
+	margin-left: 20px;
+
+}
+.description p {
+	color: #000;
+	padding: 10px;
+}
+.anounce {
+	margin-bottom: 25px;
+}
+.otheranounce1 {
+	margin-bottom: 20px;
+}
+
+#description2 {
+	height: 149px;
+}
+.category-tile {
+	position: relative;
+	margin-bottom: 25px;
+}
+.category-tile span {
+	position: absolute;
+	width: 200px;
+	bottom: 0;
+	background-color: #f6b319;
+	right: 55px;
+	color: black;
+}
+
+/* Footer */
+footer {
+	background: #F6B319;
+	margin-top: 20px;
+}
+footer p {
+	color: #000000;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 1.2em;
+}
+#copyright {
+	margin-top: 20px;
+}
+/* Calendar */
+.calendar {
+    font-family: 'Comfortaa', cursive;
+}
+#calendar-name {
+	font-size: 3vw;
+	margin-bottom: 15px;
+}
+
+/* Tables */
+.high-name {
+	font-size: 1.7em;
+}
+table {
+	border: 1px solid #fff;
+	text-align: center;
+	margin: 10px auto 15px auto;
+
+}
+table tr {
+	border: 1px solid #fff; 
+}
+table td {
+	border: 1px solid #fff;
+}
+table tr:nth-child(14) {
+	background: red;
+}
+table tr:nth-child(15) {
+	background: red;
+}
+#kachurivka-standing {
+	color: #F6B319;
+}
+
+/* Register */
+.form-group span {
+	float: left;
+}
+.reginput {
+	color: #000000;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.regerror {
+	color: red;
+}
+.regbutton {
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	background: #F6B319;
+}
+/*Loginput */
+.loginInput {
+	margin-bottom: 8px;
+}
+#loginButton {
+  margin-bottom: 10px; 
+}
+/* Large size screen */
+@media (min-width: 1200px) {
+   #nav-list a {
+   	font-size: 1.3em;
+   	margin-top: 20px;
+   }
+.container .jumbotron{
+	animation: BackgroundChange 24s ease-in infinite;
+	height: 439px;
+   }
+   .tournament {
+	background: url('../images/tournament.png') no-repeat;
+	height: 468px;
+}
+.anounce {
+	background: url('../images/anounce-large.png') no-repeat;
+	height: 490px;
+}
+.otheranounce1 {
+	background: url('../images/anounce1.jpg') no-repeat;
+	height: 247px;
+}
+.otheranounce2 {
+	background: url('../images/anounce2.jpg') no-repeat;
+	height: 247px;
+	margin-bottom: 20px;
+}
+.otheranounce3 {
+	background: url('../images/anounce3.jpg') no-repeat;
+	height: 247px;
+}
+/* Roster */
+.category-tile span {
+	right: 62px;
+}
+  /* Calendar */
+  #calendar-name {
+  	font-size: 1.6em;
+  }
+  /* Tables */
+table tr td {
+	width: 50px;
+}
+table tr td:nth-child(2) {
+	width: 200px;
+}
+}
+/* Medium size screen */
+@media (min-width: 992px) and (max-width: 1199px) {
+	#logo-img { 
+		background: url('../images/kachurivka-medium.png') no-repeat;
+		width: 100px;
+		height: 111px;
+		margin: 10px 15px 10px 0;
+    }
+	.container .jumbotron {
+		background: url('../images/kachurivka-photo-medium.png') no-repeat;
+		height: 348px;
+	}
+	.tournament {
+		background: url('../images/tournament-medium.png') no-repeat;
+		height: 371px;
+	}
+	.anounce {
+		background: url('../images/anounce-medium.png') no-repeat;
+		height: 394px;
+	}
+	.otheranounce1 {
+	background: url('../images/anounce1-medium.png') no-repeat;
+	height: 199px;
+}
+.otheranounce2 {
+	background: url('../images/anounce2-medium.png') no-repeat;
+	height: 199px;
+	margin-bottom: 20px;
+}
+.otheranounce3 {
+	background: url('../images/anounce3-medium.png') no-repeat;
+	height: 199px;
+}
+#description2 {
+	height: 54px;
+}
+/* Roster */
+.category-tile span {
+	right: 13px;
+}
+
+	  /* Calendar */
+     #calendar-name {
+  	font-size: 1.3em;
+    }
+	  /* Tables */
+    table tr td {
+	width: 40px;
+}
+    table tr td:nth-child(2) {
+	width: 170px;
+}
+} 
+/* Small sive devices */	
+@media (min-width: 768px) and (max-width: 991px) {
+	.container .jumbotron {
+		background: url('../images/kachurivka-photo-small.png') no-repeat;
+		height: 402px;
+	}
+	.container .tournament {
+		background: url('../images/tournament-small.png') no-repeat;
+		height: 430px;
+	}
+	.navbar-brand a h1 {
+		font-size: 2em;
+	}
+	/* Roster */
+/* Roster */
+    .category-tile span {
+	right: 20px;
+    }
+
+     /* Calendar */
+     #calendar-name {
+  	font-size: 1.2em;
+    }
+    .calendar {
+    font-size: 0.88em;  
+    }
+    /* Tables */
+    table tr td {
+	width: 35px;
+    }
+    table tr td:nth-child(2) {
+	width: 150px;
+}
+}
+/* Extra-small devices */
+@media (max-width: 767px) {
+    .navbar-brand {
+    	padding-top: 10px;
+    	height: 80px;
+    }
+    .navbar-brand a h1 {
+    	font-size: 6vw;
+    }
+    #collapsable-nav {
+    	clear: both;
+    }
+    #collapsable-nav a {
+		font-size: 1.2em;
+	}
+	#collapsable-nav a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
+/* Main content */
+	.container .jumbotron {
+		padding: 0;
+		margin-top: 20px;
+	}
+		.container .tournament{
+		padding: 0;
+		margin-top: 20px;
+	}
+	.description p {
+		font-size: 0.8em;
+	}
+/* Roster */
+    .category-tile span {
+	right: 40px;
+    }
+/* Calendar */
+    .calendar div p {
+    	font-size: 0.7em;
+    }
+}
+
+@keyframes BackgroundChange {
+	0% {
+		background: url('../images/kachurivka-2005.jpg') no-repeat;
+	}
+	20% 
+	{
+		background: url('../images/kachurivka-2006.jpg') no-repeat;
+	}
+	40% {
+        background: url('../images/kachurivka-2009.jpg') no-repeat;
+	}
+	60% {
+        background: url('../images/kachurivka-2013.jpg') no-repeat;
+	}
+	80% {
+        background: url('../images/kachurivka-2015.jpg') no-repeat;
+	}
+	95% {
+		background: url('../images/kachurivka-photo-large.png') no-repeat;
+	}
+	100% {
+		background: url('../images/kachurivka-photo-large.png') no-repeat;
+	}
+}
