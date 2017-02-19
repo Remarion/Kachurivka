@@ -1,2 +1,2 @@
-[{"id": 1, "name": "Олег", "lastname": "Магура", "number": "18"},
- {"id": 2, "name": "Міша", "lastname": "Куць", "number": "19"}]
+[{"id": 1, "name": "Олег", "lastname": "Магура","short_name":"S1","number": "18"},
+ {"id": 2, "name": "Міша", "lastname": "Куць","short_name":"S2","number": "19"}]

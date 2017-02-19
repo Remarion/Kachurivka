@@ -1,11 +1,11 @@
-[{"id": 1, "name": "Петро", "lastname": "Березюк", "number": "8"},
- {"id": 2, "name": "Славік", "lastname": "Птасюк", "number": "9"},
- {"id": 3, "name": "Віталій", "lastname": "Твердохліб", "number": "10"},
- {"id": 4, "name": "Володя", "lastname": "Бойко", "number": "11"},
- {"id": 5, "name": "Олег", "lastname": "Антонюк", "number": "12"},
- {"id": 6, "name": "Віталій", "lastname": "Парубочий", "number": "13"},
- {"id": 7, "name": "Петро", "lastname": "Миронець", "number": "14"},
- {"id": 8, "name": "Юра", "lastname": "Зварич", "number": "15"},
- {"id": 9, "name": "Тарас", "lastname": "Зварич", "number": "16"},
- {"id": 10, "name": "Міша", "lastname": "Грицишин", "number": "17"}
+[{"id": 1, "name": "Петро", "lastname": "Березюк","short_name":"M1","number": "8"},
+ {"id": 2, "name": "Славік", "lastname": "Птасюк","short_name":"M2","number": "9"},
+ {"id": 3, "name": "Віталій", "lastname": "Твердохліб","short_name":"M3","number": "10"},
+ {"id": 4, "name": "Володя", "lastname": "Бойко","short_name":"M4","number": "11"},
+ {"id": 5, "name": "Олег", "lastname": "Антонюк","short_name":"M5","number": "12"},
+ {"id": 6, "name": "Віталій", "lastname": "Парубочий","short_name":"M6","number": "13"},
+ {"id": 7, "name": "Петро", "lastname": "Миронець","short_name":"M7","number": "14"},
+ {"id": 8, "name": "Юра", "lastname": "Зварич","short_name":"M8","number": "15"},
+ {"id": 9, "name": "Тарас", "lastname": "Зварич","short_name":"M9","number": "16"},
+ {"id": 10, "name": "Міша", "lastname": "Грицишин","short_name":"M10","number": "17"}
 ]

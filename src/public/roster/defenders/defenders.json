@@ -1,6 +1,6 @@
-[{"id": 1, "name": "Святослав", "lastname": "Крисюк", "number": "2"},
- {"id": 2, "name": "Роман", "lastname": "Рубаха", "number": "3"},
- {"id": 3, "name": "Вова", "lastname": "Головатий", "number": "4"},
- {"id": 4, "name": "Олег", "lastname": "Войтович", "number": "5"},
- {"id": 5, "name": "Олег", "lastname": "Місюрка", "number": "6"},
- {"id": 6, "name": "Микола", "lastname": "Миронець", "number": "7"}]
+[{"id": 1, "name": "Святослав", "lastname": "Крисюк", "short_name":"D1","number": "2"},
+ {"id": 2, "name": "Роман", "lastname": "Рубаха", "short_name":"D2","number": "3"},
+ {"id": 3, "name": "Вова", "lastname": "Головатий", "short_name":"D3", "number": "4"},
+ {"id": 4, "name": "Олег", "lastname": "Войтович", "short_name":"D4", "number": "5"},
+ {"id": 5, "name": "Олег", "lastname": "Місюрка", "short_name":"D5", "number": "6"},
+ {"id": 6, "name": "Микола", "lastname": "Миронець", "short_name":"D6", "number": "7"}]
