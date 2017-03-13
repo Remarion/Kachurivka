@@ -97,8 +97,18 @@
   <script src="src/public/roster/defenders/defenders.component.js"></script>
   <script src="src/public/roster/midfielders/midfielders.component.js"></script>
   <script src="src/public/roster/strikers/strikers.component.js"></script>
-  <!-- Admin module -->
+  <!-- Admin module --> 
 
-  
+  <script type="text/javascript">
+     $(document).ready(function(){
+            var mCarouselTO = setTimeout(function(){
+            $('#carousel-example-generic').carousel({
+                interval: 2500,
+                cycle: true,
+            }).trigger('slide');
+            }, 1000);
+            var q = mCarouselTO;
+        });
+</script>
 </body>
 </html>

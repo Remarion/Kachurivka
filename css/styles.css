@@ -107,6 +107,9 @@ h2 {
 	right: 55px;
 	color: black;
 }
+.container .jumbotron {
+   	padding: 0;
+ }
 
 /* Footer */
 footer {
@@ -187,9 +190,6 @@ table tr:nth-child(15) {
    	font-size: 1.3em;
    	margin-top: 20px;
    }
-   .container .jumbotron {
-   	padding: 0;
-   }
    .tournament {
 	background: url('../images/tournament.png') no-repeat;
 	height: 468px;
@@ -235,10 +235,6 @@ table tr td:nth-child(2) {
 		height: 111px;
 		margin: 10px 15px 10px 0;
     }
-	.container .jumbotron {
-		background: url('../images/kachurivka-photo-medium.png') no-repeat;
-		height: 348px;
-	}
 	.tournament {
 		background: url('../images/tournament-medium.png') no-repeat;
 		height: 371px;
@@ -285,10 +281,6 @@ table tr td:nth-child(2) {
 	.container .jumbotron {
 		background: url('../images/kachurivka-photo-small.png') no-repeat;
 		height: 402px;
-	}
-	.container .tournament {
-		background: url('../images/tournament-small.png') no-repeat;
-		height: 430px;
 	}
 	.navbar-brand a h1 {
 		font-size: 2em;
